@@ -57,39 +57,49 @@
 \makecvtitle % Print the CV title
 I'm a working computer scientist and a developer.
 
-\section{Things that I like and care, but also things that I don't}
-I like challenges in programming! But not \textit{fake challenges}
-like understanding frameworks, though this is perhaps one of the most
-valued things in the industry nowadays.  I like to reason about the
-semantics of the programming language or stuff like ``what is the time
-complexity of this function?''  Real challenges in programming usually
-require you to be creative and \textit{educate yourself} about the
-problem.  There is no silver bullet, you need to learn about the thing
-that you are solving, you need to read papers about it. It doesn't matter
-which framework you are using if the problem is NP-Hard or if the 
-data size is so huge that SQL databases can't handle it.
+\section{Things that I like and care, but also things that I don't} I like
+challenges in programming! But not \textit{fake challenges} like understanding
+frameworks, though this is perhaps one of the most valued things in the industry
+nowadays. I like to reason about the semantics of the programming language or
+stuff like ``if I do this odd thing in JS, what will be the behavior?'' or ``how do we
+avoid this concurrency problem?'' Real challenges in programming usually require
+you to be creative and \textit{educate yourself} about the problem. There is no
+silver bullet, you need to learn about the thing that you are solving, you need
+to read papers about it, you need to read the documentation of the tool that you
+are using. It doesn't matter which framework you are using if the problem is
+NP-Hard or if the data size is so huge that SQL databases can't handle it.
 
-People should notice that what makes someone a good programmer is to
-understand Computing Science foundations.  Yes, tools are important to
-be more efficient and so on.  And engineering is about using those
-tools and the resources that you have to solve some problem.  But a
-tool just \textit{stays} important for some time, eventually some other
-new tool appears to take its places.  So in this section, I will only
-talk about ideas and values that I like and car about, but not the
-tools that I use.  See my CV to know about the tools that I use.
+People should notice that what makes someone a good programmer is to understand
+Computing Science foundations. Yes, tools are important to be more efficient and
+so on. And engineering is about using those tools and the resources that you
+have to solve some problem. But a tool just \textit{stays} important for some
+time, eventually some other new tool appears to take its places. So in this
+section, I will only talk about ideas and values that I like and car about, but
+not the tools that I use. See my CV to know about the tools that I use. I will
+also mention some general concepts presented in some tools here and give some
+examples, but I don't mean rant agaist any specific framework or language.
 
-I care about code quality, test coverage, static analysis, and
-well-written code. Tests are not the ultimate tool in software
-quality, but it is the thing that the industry has widely adopted. I
-think we should not forget other styles of quality insurance - I mean,
-there is a huge and diverse academic research field about that.  If
-you are dealing with a distributed system why not model it in a model
-checker? And, please, chose static and strongly typed languages, and
-go beyond unit tests.
+Tests are not the ultimate tool in software
+quality, but it is the thing that the industry has widely adopted.
+Before ranting about tests like Dijkstra, anyone should at least aknowledge
+the different kinds of tests that exists and understand the limitations of each.
+In my experience, integrations tests can be extremilly helpful in descovering
+connor cases of the behavior of the system. Though, unit tests is just crapp
+made necessary by dynamic typed languagens. Useful test are about general
+and connor cases behavior, not if the code is glued nicelly. Lets make tests
+about behavior, not interface connections.
+
+I think we should not forget other styles of quality insurance - I mean, there
+is a huge and diverse academic research field about that. If you are dealing
+with a distributed system why not model it in a model checker? And, please,
+chose static and strongly typed languages, and go beyond unit tests. Nowdays,
+the academy is putting its verified code in airplanes and in generators for
+nuclear power plants. This kind of knowldge shouldn't be restrict to a few nerds
+at INRIA. All programmers should at least know what is Formal Methods.
 
 I think that software development should follow some basic ``practical
 software engineering'', like CI/CD, code review, git flow and so on.
-Communication in programming is also very important, so we should
+Communication in software development is also very important, so we should
 always make clear ``why some piece of code exists'', other questions
 usually are easy to answer by just reading the thing. In my opinion,
 understanding the goal of some function is more important than
