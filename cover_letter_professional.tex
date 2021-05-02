@@ -253,10 +253,40 @@ TODO
 % nuclear power plants. This kind of knowledge shouldn't be restrictedrestricted to a few nerds
 % at INRIA. All programmers should at least know what is Formal Methods.
 
-\section{Range agaist Object Orientation (Rant Section)}
-TODO
+\section{Range against Object Orientation (Rant Section)}
+My opinion on Object Orientation (OO) is in opposition with the common believe.
+OO programming doesn't provide more abstraction, or better organization, or elegance or simplicity, it just provides the illusion of those things.
+Let's begin stating what OO is:
+an object is an encapsulated state which you can only interact with by sending messages, in in other words OO is the association between data and functions.
+There are big problems with that:
+\begin{itemize}
+  \item States being passed all around. In the original concept the messages in OO should send copies of states, not references of states.
+        But this is not how 99\% of OO programming languages are implemented.
+        This is a big problem because it's harder to debug the code and to implement parallelism becomes painful.
+        OO is just global variables with extra steps.
+  \item OO has nothing to do with better organization. One way to implement OO is through classes, which is basically a way to define types.
+        Well, types and module systems allows you to organize your code because you can give names for some specific kinds of data and group them together.
+        Nothing to do with OO.
+  \item OO doesn't provide better abstraction.
+        Abstraction is hiding irrelevant information (one possible definition).
+        When people are presented OO they are showed trivial examples like a class representing something real like the customer,
+        and the teacher says this is how OO allows you to abstract a concrete thing because your customer class is some sort of model
+        of the real life customer which doesn't have the irrelevant information.
+        But in practice OO programs very often have classes that doesn't represent anything real, like services, manager, factories and other doers.
+        Those classes are there to fill a gap and because OO demands you to have the association between data and functions.
+        So at end of the day the promised of abstraction is not fully delivered, and you end up with many words in your program that have nothing to do with the domain in matter.
+\end{itemize}
 
-\section{Range agaist company's bullshits (Rant Section)}
+So what should I do instead of OO?
+Should I use functional programming?
+The opposite of OO is non-OO, or what was usually called procedural programming.
+We can combine procedural programming with imperative and functional programming, as we can also combine these with OO.
+
+So, in conclusion I must say that I actually write OO code, but not by my choice.
+Most systems out there are objected oriented and I, as humble employee, have the job of programming in them.
+But of course I would like to see more people stop using OO.
+
+\section{Range against company's bullshits (Rant Section)}
 TODO
 % % \textit{Since the early 2000 the comporate world is going crazy with the ``values and culture'' thing}. It is the
 % organizational silver bullet of the moment. ``The employees will be
