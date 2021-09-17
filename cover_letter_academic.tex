@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+% CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}
+% CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Rafael Castro Gonçalves Silva} % Your first name \familyname{} % Your last name
+\familyname{} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Cover Letter}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{rafaelcgs10@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\makecvtitle % Print the CV title
+To whom it may concern.
+
+\medskip
+
+Hi, I'm Rafael.
+
+\medskip
+
+I'm a working computer scientist and a developer.
+I'll talk a bit about myself and why I'm interested in this position.
+
+\medskip
+
+At the end of my CS undergrad I discovered that programs can be certified in respect to a specification using proofs. I already knew Curry-Howard correspondence, but when I found proof assistants like Coq and Isabelle, and languages with dependend types like Agda and Idris, I was very surprised to see what people were doing with it. For example, I found out CompCert, a C compiler with a fully verified backend.
+I started the masters and my advisor had experience with type systems for programming languages, specifically type inference algorithms. So I decided that my masters would be using a proof assistant and would have something related to type inference. You may find its resulting publication by searching "Monadic W in Coq".
+
+\medskip
+
+After I finished my masters I was looking for a PhD, but things in my life took an unexpected turn, so I ended up working in the software industry as most do. I was lucky enough to find a very interesting project to be part of, being brief: it’s a distributed system, processing an event stream,  with concurrency scenarios that must process events in whatever order, so it can keep a materialized view correctly updated. So far this project showed the very complex world of distributed systems and stream processing.
+
+\medskip
+
+When I saw this position description I thought it is a perfect match with my experiences, so decided to quickly write this small cover letter.
+
+\medskip
+
+I hope I appeared interesting enough for future conversation.
+
+\medskip
+
+Best regards, Rafael.
+
+\end{document}
